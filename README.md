@@ -1,5 +1,8 @@
 # NEURA — Hungarian AI Language Model
 
+**Status:** ✅ Working — model trained, text generation tested at 390K steps (PPL=48.3)
+
+
 **A 355M-parameter Hungarian language model** with a custom architecture (GQA + SwiGLU + RMSNorm), trained on an RTX 3070 8GB GPU.
 
 ## Model Architecture
@@ -24,6 +27,14 @@ On the Desktop: `neura_research_paper_01-05_*.md`
 3. Attention Mechanism & Layer Hierarchy
 4. Why 355M Can't Reason (& How To Fix It)
 5. Practical Guide to Model Editing
+
+## Model Checkpoints
+⚠️ **Checkpoints are on a remote machine** (RTX 3070, 192.168.0.142, ~400km away):
+- `lm300m_v3_step390000.pt` — 1.45 GB, PPL=48.3 (best)
+- `lm300m_v2_step70000.pt` — PPL=49.8
+- `lm300m_final.pt` — PPL=133.9
+
+To retrieve: power on the remote machine, start HTTP server, download via curl.
 
 ## Usage
 ```bash
