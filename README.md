@@ -1,40 +1,43 @@
-# NEURA — Magyar AI Nyelvi Modell
+# NEURA — Hungarian AI Language Model
 
-**355M paraméteres magyar nyelvi modell**, saját architektúrával (GQA + SwiGLU + RMSNorm), RTX 3070 8GB GPU-n trenírozva.
+**A 355M-parameter Hungarian language model** with a custom architecture (GQA + SwiGLU + RMSNorm), trained on an RTX 3070 8GB GPU.
 
-## Modell architektúra
-- 24 réteg, 1024 dimenzió, 16 attention fej, 4 KV fej
+## Model Architecture
+- 24 layers, 1024 dimensions, 16 attention heads, 4 KV heads
 - SentencePiece 32K tokenizer
-- Training adat: 2.53B token (OpenSubtitles + HunSum-2)
-- Legjobb PPL: 48.3 (390K lépés)
+- Training data: 2.53B tokens (OpenSubtitles + HunSum-2)
+- Best PPL: 48.3 (390K steps)
 
-## Fájlok
-| Fájl | Leírás |
-|------|--------|
-| `neura_explorer.py` | Modell vizsgáló — forward-pass hook-ok, neuron aktiváció |
-| `neura_forge_v1.pt` | NEURA Forge modell (1078 neuron törölve/cserélve) |
-| `neura_monitor.py` | Training automatikus monitor + újraindítás |
-| `continue_300m.py` | Training folytató script |
-| `train_v2.py` | Új training script |
+## Files
+| File | Description |
+|------|-------------|
+| `neura_explorer.py` | Model inspector — forward-pass hooks, neuron activation |
+| `neura_forge_v1.pt` | NEURA Forge model (1078 neurons removed/replaced) |
+| `neura_monitor.py` | Automatic training monitor + restart |
+| `continue_300m.py` | Training continuation script |
+| `train_v2.py` | New training script |
 
-## Kutatási Paper-ek
-A Desktop-on: `neura_research_paper_01-05_*.md`
+## Research Papers
+On the Desktop: `neura_research_paper_01-05_*.md`
 1. Training Dynamics & Loss Landscape
 2. Neuron Specialization & Sparsity
 3. Attention Mechanism & Layer Hierarchy
 4. Why 355M Can't Reason (& How To Fix It)
 5. Practical Guide to Model Editing
 
-## Használat
+## Usage
 ```bash
-# Modell betöltése
+# Load model
 python neura_explorer.py
 
-# Training folytatása (RTX 3070)
+# Continue training (RTX 3070)
 python continue_300m.py
 ```
 
-## Függőségek
+## Dependencies
 - PyTorch 2.x + CUDA
 - SentencePiece
 - NumPy
+
+## Author
+Zsombi & Hermes Agent (Nous Research)
