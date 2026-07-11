@@ -5,6 +5,14 @@
 
 **A 355M-parameter Hungarian language model** with a custom architecture (GQA + SwiGLU + RMSNorm), trained on an RTX 3070 8GB GPU.
 
+## ⚠️ THIS PROJECT IS UNFINISHED — FEEL FREE TO CONTINUE IT ⚠️
+
+**Ez a projekt NINCS KÉSZEN. Bárki folytathatja, aki akarja!**
+Ezt a projektet Zsombi & Hermes Agent (Nous Research) közösen fejlesztette, de egyik projekt sincs 100%-osan befejezve. Ha tetszik az ötlet és tovább fejlesztenéd, nyugodtan fork-old, folytasd, és csinálj belőle valami nagyszerűt!
+
+---
+
+
 ## Model Architecture
 - 24 layers, 1024 dimensions, 16 attention heads, 4 KV heads
 - SentencePiece 32K tokenizer
