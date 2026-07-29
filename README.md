@@ -1,4 +1,4 @@
-# NEURA 300M — 355M Parameter Hungarian Language Model
+# neura-hungarian-lm
 
 **Status:** ✅ Working — model trained, text generation tested at 390K steps (PPL=48.3)
 
