@@ -1,28 +1,18 @@
 # neura-hungarian-lm
 
-**Status:** ✅ Working — model trained, text generation tested at 390K steps (PPL=48.3)
+355 millió paraméteres magyar nyelvi modell tanítási scriptek (GQA + SwiGLU).
 
-355M parameter Hungarian language model with custom architecture (GQA + SwiGLU + RMSNorm), trained on an RTX 3070 8GB GPU.
+## 📌 A projekt célja
+Nyílt forráskódú, magyar nyelvre optimizált Transformer modell felépítése és tanítása.
 
-## ⚠️ THIS PROJECT IS UNFINISHED — FEEL FREE TO CONTINUE IT ⚠️
+## ⚙️ Technológiai stakk
+- PyTorch, HuggingFace Transformers, Python
 
-This project was developed by Zsombi & Hermes Agent (Nous Research).
+## 🚀 Telepítés és Használat
+```bash
+git clone https://github.com/zsomborturcsanyi7-lang/neura-hungarian-lm.git
+cd neura-hungarian-lm
+```
 
----
-
-## Architecture
-- 24 layers, 1024 dimensions, 16 attention heads, 4 KV heads
-- SentencePiece 32K tokenizer
-- Training data: 2.53B tokens (OpenSubtitles + HunSum-2)
-- Best PPL: 48.3 (390K steps)
-
-## Files
-| File | Description |
-|------|-------------|
-| `neura.py` | Model architecture |
-| `sft_train.py` | SFT training |
-| `test_neura.py` | Testing |
-| `deploy_sft.py` | Deployment |
-
-## Developer
-Zsombi & Hermes Agent (Nous Research)
+## 📊 Status
+⚠️ **Modell tanítási kód**.
