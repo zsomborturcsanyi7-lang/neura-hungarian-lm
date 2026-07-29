@@ -1,18 +1,18 @@
 # neura-hungarian-lm
 
-355 millió paraméteres magyar nyelvi modell tanítási scriptek (GQA + SwiGLU).
+Training scripts for a 355M parameter Hungarian language model (GQA + SwiGLU).
 
-## 📌 A projekt célja
-Nyílt forráskódú, magyar nyelvre optimizált Transformer modell felépítése és tanítása.
+## 📌 Overview & Purpose
+Open-source codebase for training and evaluating a Hungarian-optimized Transformer language model.
 
-## ⚙️ Technológiai stakk
+## ⚙️ Tech Stack & Architecture
 - PyTorch, HuggingFace Transformers, Python
 
-## 🚀 Telepítés és Használat
+## 🚀 Installation & Quickstart
 ```bash
 git clone https://github.com/zsomborturcsanyi7-lang/neura-hungarian-lm.git
 cd neura-hungarian-lm
 ```
 
-## 📊 Status
-⚠️ **Modell tanítási kód**.
+## 📊 Project Status
+⚠️ **Model Training Code**.
